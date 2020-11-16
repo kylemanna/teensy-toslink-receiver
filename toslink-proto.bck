@@ -1,0 +1,57 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PLR135-T10
+D IR Receiver Modules for Data Transmission
+K opto IR receiver
+F http://www.vishay.com/docs/82667/tsdp341.pdf
+$ENDCMP
+#
+$CMP TSDP343xx
+D IR Receiver Modules for Data Transmission
+K opto IR receiver
+F http://www.vishay.com/docs/82667/tsdp341.pdf
+$ENDCMP
+#
+$CMP TSOP341xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82490/tsop321.pdf
+$ENDCMP
+#
+$CMP TSOP343xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82490/tsop321.pdf
+$ENDCMP
+#
+$CMP TSOP345xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82490/tsop321.pdf
+$ENDCMP
+#
+$CMP TSOP348xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F https://www.vishay.com/docs/82489/tsop322.pdf
+$ENDCMP
+#
+$CMP TSOP41xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82460/tsop45.pdf
+$ENDCMP
+#
+$CMP TSOP43xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82460/tsop45.pdf
+$ENDCMP
+#
+$CMP TSOP45xx
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F http://www.vishay.com/docs/82460/tsop45.pdf
+$ENDCMP
+#
+#End Doc Library

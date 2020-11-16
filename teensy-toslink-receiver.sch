@@ -1,0 +1,506 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 900  7500 0    100  ~ 0
+Reference\nhttps://www.pjrc.com/store/teensy40.html\nhttps://www.pjrc.com/teensy/dimensions.html
+$Comp
+L toslink-proto:PLR135-T10 U1
+U 1 1 5FB1F341
+P 1850 3000
+F 0 "U1" H 1838 3425 50  0000 C CNN
+F 1 "PLR135-T10" H 1838 3334 50  0000 C CNN
+F 2 "teensy-toslink-receiver:Everlight_PLR135-T10" H 1800 2625 50  0001 C CNN
+F 3 "https://www.everlight.com/file/ProductFile/PLR135-T10.pdf" H 2500 3300 50  0001 C CNN
+	1    1850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5FB20587
+P 4300 3850
+F 0 "J6" H 4300 4050 50  0000 C CNN
+F 1 "Conn_01x04" V 4400 3800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4300 3850 50  0001 C CNN
+F 3 "~" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FB213AD
+P 3100 2950
+F 0 "C1" H 3215 2996 50  0000 L CNN
+F 1 "100nF" H 3215 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 2800 50  0001 C CNN
+F 3 "~" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FB22499
+P 2250 3200
+F 0 "#PWR01" H 2250 2950 50  0001 C CNN
+F 1 "GND" H 2255 3027 50  0000 C CNN
+F 2 "" H 2250 3200 50  0001 C CNN
+F 3 "" H 2250 3200 50  0001 C CNN
+	1    2250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FB226CD
+P 3100 3100
+F 0 "#PWR03" H 3100 2850 50  0001 C CNN
+F 1 "GND" H 3105 2927 50  0000 C CNN
+F 2 "" H 3100 3100 50  0001 C CNN
+F 3 "" H 3100 3100 50  0001 C CNN
+	1    3100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5FB22EA8
+P 5850 4400
+F 0 "#PWR09" H 5850 4150 50  0001 C CNN
+F 1 "GND" H 5855 4227 50  0000 C CNN
+F 2 "" H 5850 4400 50  0001 C CNN
+F 3 "" H 5850 4400 50  0001 C CNN
+	1    5850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3000 2850 3000
+Text Label 2850 3000 2    50   ~ 0
+TOSLINK_RX
+$Comp
+L power:+5V #PWR08
+U 1 1 5FB23FAE
+P 5650 2150
+F 0 "#PWR08" H 5650 2000 50  0001 C CNN
+F 1 "+5V" H 5665 2323 50  0000 C CNN
+F 2 "" H 5650 2150 50  0001 C CNN
+F 3 "" H 5650 2150 50  0001 C CNN
+	1    5650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5FB24EA3
+P 3000 2600
+F 0 "JP1" V 3050 2800 50  0000 R CNN
+F 1 "Jumper_NC_Small" V 2950 3350 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3000 2600 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5FB23B5D
+P 3100 2400
+F 0 "#PWR02" H 3100 2250 50  0001 C CNN
+F 1 "+3.3V" H 3115 2573 50  0000 C CNN
+F 2 "" H 3100 2400 50  0001 C CNN
+F 3 "" H 3100 2400 50  0001 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FB21D6C
+P 3100 2600
+F 0 "L1" H 3153 2646 50  0000 L CNN
+F 1 "47uH" H 3153 2555 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 3100 2600 50  0001 C CNN
+F 3 "~" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2800 3000 2800
+Wire Wire Line
+	3000 2500 3000 2450
+Wire Wire Line
+	3000 2450 3100 2450
+Wire Wire Line
+	3100 2750 3100 2800
+Connection ~ 3100 2800
+Wire Wire Line
+	3000 2700 3000 2800
+Connection ~ 3000 2800
+Wire Wire Line
+	3000 2800 3100 2800
+Wire Wire Line
+	3100 2450 3100 2400
+Connection ~ 3100 2450
+Wire Wire Line
+	5250 3850 4500 3850
+Wire Wire Line
+	4500 3950 5250 3950
+$Comp
+L power:GND #PWR07
+U 1 1 5FB35432
+P 4800 4150
+F 0 "#PWR07" H 4800 3900 50  0001 C CNN
+F 1 "GND" H 4805 3977 50  0000 C CNN
+F 2 "" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5FB35B53
+P 2350 4150
+F 0 "J1" H 2350 4350 50  0000 C CNN
+F 1 "Conn_01x03" V 2450 4150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2350 4150 50  0001 C CNN
+F 3 "~" H 2350 4150 50  0001 C CNN
+	1    2350 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3350 4500 3350
+Wire Wire Line
+	4500 3450 4800 3450
+Wire Wire Line
+	4500 4050 4800 4050
+Wire Wire Line
+	4500 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 3250
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5FB38788
+P 4700 3050
+F 0 "#PWR06" H 4700 2900 50  0001 C CNN
+F 1 "+3.3V" H 4715 3223 50  0000 C CNN
+F 2 "" H 4700 3050 50  0001 C CNN
+F 3 "" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3250 4700 3250
+Connection ~ 4700 3250
+Wire Wire Line
+	4700 3250 4700 3050
+Wire Wire Line
+	4800 3450 4800 4050
+Wire Wire Line
+	4800 4050 4800 4150
+Connection ~ 4800 4050
+Text Label 4850 3350 0    50   ~ 0
+CEC
+Text Label 4850 3850 0    50   ~ 0
+ARC
+Text Label 4850 3950 0    50   ~ 0
+HPD
+Wire Wire Line
+	2550 4050 3100 4050
+Wire Wire Line
+	2550 4250 3100 4250
+Wire Wire Line
+	2550 4150 3100 4150
+Text Label 3100 4150 2    50   ~ 0
+SPDIF_IN
+Text Label 3100 4050 2    50   ~ 0
+TOSLINK_RX
+Text Label 3100 4250 2    50   ~ 0
+ARC
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 5FB46955
+P 3800 6000
+F 0 "J4" V 4000 6000 50  0000 C CNN
+F 1 "Conn_01x05" V 3900 6000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3800 6000 50  0001 C CNN
+F 3 "~" H 3800 6000 50  0001 C CNN
+	1    3800 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5FB4732D
+P 3400 5650
+F 0 "J2" V 3600 5650 50  0000 C CNN
+F 1 "Conn_01x05" V 3500 5650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3400 5650 50  0001 C CNN
+F 3 "~" H 3400 5650 50  0001 C CNN
+	1    3400 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5FB477D8
+P 3400 6350
+F 0 "J3" V 3600 6350 50  0000 C CNN
+F 1 "Conn_01x05" V 3500 6350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3400 6350 50  0001 C CNN
+F 3 "~" H 3400 6350 50  0001 C CNN
+	1    3400 6350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 5450 3200 5100
+Wire Wire Line
+	3300 5450 3300 5100
+Wire Wire Line
+	3400 5450 3400 5100
+Wire Wire Line
+	3500 5450 3500 5100
+Wire Wire Line
+	3600 5450 3600 5100
+Wire Wire Line
+	4000 5800 4400 5800
+Wire Wire Line
+	4000 5900 4400 5900
+Wire Wire Line
+	4000 6200 4400 6200
+Wire Wire Line
+	3200 6900 3200 6550
+Wire Wire Line
+	3300 6900 3300 6550
+Wire Wire Line
+	3400 6900 3400 6550
+Wire Wire Line
+	3500 6900 3500 6550
+Wire Wire Line
+	3600 6900 3600 6550
+Text Label 3600 5100 3    50   ~ 0
+DIO13
+Text Label 3500 5100 3    50   ~ 0
+DIO14
+Text Label 3400 5100 3    50   ~ 0
+SPDIF_IN
+Text Label 3300 5100 3    50   ~ 0
+DIO16
+Text Label 3200 5100 3    50   ~ 0
+DIO17
+Text Label 3600 6900 1    50   ~ 0
+DIO12
+Text Label 3500 6900 1    50   ~ 0
+DIO11
+Text Label 3400 6900 1    50   ~ 0
+DIO10
+Text Label 3300 6900 1    50   ~ 0
+DIO9
+Text Label 3200 6900 1    50   ~ 0
+DIO8
+Text Label 4400 5800 2    50   ~ 0
+OnOff
+Text Label 4400 5900 2    50   ~ 0
+Program
+Text Label 4400 6200 2    50   ~ 0
+VBat
+Wire Wire Line
+	4050 6100 4050 5700
+Wire Wire Line
+	4000 6100 4050 6100
+Wire Wire Line
+	4100 6000 4100 6350
+Wire Wire Line
+	4000 6000 4100 6000
+$Comp
+L power:GND #PWR04
+U 1 1 5FB516C1
+P 4100 6350
+F 0 "#PWR04" H 4100 6100 50  0001 C CNN
+F 1 "GND" H 4105 6177 50  0000 C CNN
+F 2 "" H 4100 6350 50  0001 C CNN
+F 3 "" H 4100 6350 50  0001 C CNN
+	1    4100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5FB519D0
+P 4050 5700
+F 0 "#PWR05" H 4050 5550 50  0001 C CNN
+F 1 "+3.3V" H 4065 5873 50  0000 C CNN
+F 2 "" H 4050 5700 50  0001 C CNN
+F 3 "" H 4050 5700 50  0001 C CNN
+	1    4050 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4350 5850 4400
+Connection ~ 5850 4350
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5FB690E1
+P 4300 3350
+F 0 "J5" H 4300 3550 50  0000 C CNN
+F 1 "Conn_01x03" V 4400 3350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4300 3350 50  0001 C CNN
+F 3 "~" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3200 5100
+NoConn ~ 3300 5100
+NoConn ~ 3500 5100
+NoConn ~ 3600 5100
+NoConn ~ 4400 5800
+NoConn ~ 4400 5900
+NoConn ~ 4400 6200
+NoConn ~ 3600 6900
+NoConn ~ 3500 6900
+NoConn ~ 3400 6900
+NoConn ~ 3300 6900
+NoConn ~ 3200 6900
+NoConn ~ 5250 2450
+NoConn ~ 5250 2550
+NoConn ~ 5250 2650
+NoConn ~ 5250 2750
+NoConn ~ 5250 2850
+NoConn ~ 5250 2950
+NoConn ~ 5250 3050
+NoConn ~ 5250 3150
+NoConn ~ 5250 3550
+NoConn ~ 5250 3650
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FB78980
+P 6350 1650
+F 0 "#FLG0101" H 6350 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 1823 50  0000 C CNN
+F 2 "" H 6350 1650 50  0001 C CNN
+F 3 "~" H 6350 1650 50  0001 C CNN
+	1    6350 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FB793F8
+P 6350 1650
+F 0 "#PWR0101" H 6350 1500 50  0001 C CNN
+F 1 "+5V" H 6365 1823 50  0000 C CNN
+F 2 "" H 6350 1650 50  0001 C CNN
+F 3 "" H 6350 1650 50  0001 C CNN
+	1    6350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5FB79692
+P 6800 1650
+F 0 "#PWR0102" H 6800 1500 50  0001 C CNN
+F 1 "+3.3V" H 6815 1823 50  0000 C CNN
+F 2 "" H 6800 1650 50  0001 C CNN
+F 3 "" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FB79A33
+P 6800 1650
+F 0 "#FLG0102" H 6800 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 1823 50  0000 C CNN
+F 2 "" H 6800 1650 50  0001 C CNN
+F 3 "~" H 6800 1650 50  0001 C CNN
+	1    6800 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FB79E86
+P 7250 1650
+F 0 "#FLG0103" H 7250 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 7250 1823 50  0000 C CNN
+F 2 "" H 7250 1650 50  0001 C CNN
+F 3 "~" H 7250 1650 50  0001 C CNN
+	1    7250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FB7A338
+P 7250 1650
+F 0 "#PWR0103" H 7250 1400 50  0001 C CNN
+F 1 "GND" H 7255 1477 50  0000 C CNN
+F 2 "" H 7250 1650 50  0001 C CNN
+F 3 "" H 7250 1650 50  0001 C CNN
+	1    7250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5FB7C01D
+P 3100 2800
+F 0 "#FLG0104" H 3100 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 3100 2928 50  0000 L CNN
+F 2 "" H 3100 2800 50  0001 C CNN
+F 3 "~" H 3100 2800 50  0001 C CNN
+	1    3100 2800
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	2400 5600 3850 5600
+Wire Notes Line
+	3850 5600 3850 6400
+Wire Notes Line
+	3850 6400 2400 6400
+Wire Notes Line
+	2400 6400 2400 5600
+Text Notes 2450 6050 0    100  ~ 0
+Teensy 4.0
+Connection ~ 5650 4350
+Wire Wire Line
+	5450 4350 5550 4350
+Wire Wire Line
+	5550 4350 5650 4350
+Connection ~ 5550 4350
+Wire Wire Line
+	5750 4350 5650 4350
+Wire Wire Line
+	5750 4350 5850 4350
+Connection ~ 5750 4350
+$Comp
+L toslink-proto:HDMI_A_1.4 J7
+U 1 1 5FB1FA43
+P 5650 3250
+F 0 "J7" H 6080 3296 50  0000 L CNN
+F 1 "HDMI_A_1.4" H 6080 3205 50  0000 L CNN
+F 2 "teensy-toslink-receiver:Amphenol_ICC-10029449-001RLF-MFG" H 5675 3250 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 5675 3250 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3900 6150 4000
+Wire Wire Line
+	6150 4100 6150 4000
+Connection ~ 6150 4000
+Connection ~ 6150 4100
+Wire Wire Line
+	6150 4100 6150 4200
+$Comp
+L power:GND #PWR0104
+U 1 1 5FB2D1BE
+P 6150 4400
+F 0 "#PWR0104" H 6150 4150 50  0001 C CNN
+F 1 "GND" H 6155 4227 50  0000 C CNN
+F 2 "" H 6150 4400 50  0001 C CNN
+F 3 "" H 6150 4400 50  0001 C CNN
+	1    6150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4400 6150 4200
+Connection ~ 6150 4200
+$EndSCHEMATC

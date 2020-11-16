@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HDMI_A_1.4
+D HDMI 1.4+ type A connector
+K hdmi conn
+F https://en.wikipedia.org/wiki/HDMI
+$ENDCMP
+#
+$CMP PLR135-T10
+D IR Receiver Modules for Remote Control Systems
+K opto IR receiver
+F https://www.everlight.com/file/ProductFile/PLR135-T10.pdf
+$ENDCMP
+#
+#End Doc Library
